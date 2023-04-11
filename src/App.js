@@ -1,23 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
+import CurriculumSections from './components/CurriculumSections/CurriculumSections';
+import Home from './components/Home';
+import Portafolio from './components/Portafolio/Portafolio';
+
+import {DB} from './DB/DB';
+
+const {home, curriculumSections, portafolio, footer} = DB;
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Home home={home} footer={footer} />
+      <CurriculumSections curriculumSections={curriculumSections} />
+      <Portafolio portafolio={portafolio} />
     </div>
   );
 }
