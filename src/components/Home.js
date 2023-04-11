@@ -1,9 +1,7 @@
-import './Home.scss';
-
 function Home({home, footer}) {
   return (
-    <section className="Home">
-      <div className="Home__info">
+    <section className="flex-auto justify-center bg-gradient-to-b from-blue-50 to-blue-300 flex items-stretch">
+      <div className="py-4">
         <h1>{home.nombre}</h1>
         <h2 className="Home__title">{home.profesion}</h2>
         <ul>
@@ -21,8 +19,12 @@ function Home({home, footer}) {
           </li>
         </ul>
       </div>
-      <div className="Home__imagen">
-        <img src={home.imagen} alt={home.nombre} />
+      <div className="flex justify-end py-12">
+        <img
+          className="rounded-full w-24"
+          src={home.imagen}
+          alt={home.nombre}
+        />
       </div>
     </section>
   );

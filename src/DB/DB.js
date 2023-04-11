@@ -12,30 +12,30 @@ export const DB = {
         titulo: 'Full Stack',
         year: 2022,
         description:
-          'Desarrollador Python' +
-          'Desarrollador Java' +
-          'Desarrolador app Web' +
-          'Desarrollador app Mobil',
+          '❗Desarrollador Python.' +
+          '\n❗Desarrollador Java.' +
+          '\n❗Desarrolador app Web.' +
+          '\n❗Desarrollador app Mobil.',
       },
       {
         titulo: 'Tecnico Electronico',
         year: 2012,
         description:
-          'Tecnico en mantenimiento de televisores digitales y analogos' +
-          'Tecnico en mantenimiento de equipos de audio' +
-          'Tecnico en mantenimiento de equipos Celulares',
+          '❗Tecnico en mantenimiento de televisores digitales y analogos.' +
+          '\n❗Tecnico en mantenimiento de equipos de audio.' +
+          '\n❗Tecnico en mantenimiento de equipos Celulares.',
       },
       {
         titulo: 'Bachiller Tecnico en sistemas',
         year: 2007,
-        description: 'Tecnico en mantenimiento de Computadores',
+        description: '❗Tecnico en mantenimiento de Computadores.',
       },
     ],
     experiencia: [
       {
         titulo: 'FreeLance',
         year: 2023,
-        description: 'Desarrollo de aplicaciones web y mobiles',
+        description: '❗Desarrollo de aplicaciones web y mobiles.',
       },
     ],
   },

@@ -1,5 +1,3 @@
-import './Descripciones.scss';
-
 function Descripciones({descripciones}) {
   return (
     <div className="Descripciones">
@@ -11,7 +9,11 @@ function Descripciones({descripciones}) {
           >
             <h3>{descripcion.titulo}</h3>
             <span className="Descripciones__year">{descripcion.year}</span>
-            <p>{descripcion.description}</p>
+            <p
+              dangerouslySetInnerHTML={{
+                __html: descripcion.description.replace(/\n/g, '<br>'),
+              }}
+            ></p>
           </article>
         );
       })}

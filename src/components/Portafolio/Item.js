@@ -1,9 +1,7 @@
-import './Item.scss';
-
 function Item({item}) {
   return (
     <article>
-      <img alt={item.alt} src={item.url} />
+      <img className="mt-2 w-auto" alt={item.alt} src={item.url} />
     </article>
   );
 }
