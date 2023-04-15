@@ -1,32 +1,29 @@
-function Home({home, footer}) {
+import Header from './Header';
+import Sidebar from './Sidebar';
+import {DB} from './../DB/DB';
+
+function Home() {
+  const {home} = DB;
   return (
-    <section className="flex-auto justify-center bg-gradient-to-b from-blue-50 to-blue-300 flex items-stretch">
-      <div className="py-4">
-        <h1>{home.nombre}</h1>
-        <h2 className="Home__title">{home.profesion}</h2>
-        <ul>
-          <li>
-            <span className="Home__icon">📱</span>
-            <a href={`cel:${home.celular}`} className="Home__link">
-              {home.celular}
-            </a>
-          </li>
-          <li>
-            <span className="Home__icon">📧</span>
-            <a href={`email:${footer.email}`} className="Home__link">
-              {footer.email}
-            </a>
-          </li>
-        </ul>
+    <>
+      <Header />
+      <div className="md:flex md:min-h-screen ">
+        <Sidebar />
+        <main className="items-start px-8 flex-auto flex bg-gradient-to-b from-white via-neutral-400 to-black">
+          <div className="font-bold uppercase px-4 my-4">
+            <h1 className="hover:scale-110 text-blue-700">
+              perfil Profesional:
+            </h1>
+            <p
+              className="flex justify-start text-justify bg-clip-text mb-5 my-4 md:mb-0"
+              dangerouslySetInnerHTML={{
+                __html: home.perfil.replace(/\n/g, '<br>'),
+              }}
+            />
+          </div>
+        </main>
       </div>
-      <div className="flex justify-end py-12">
-        <img
-          className="rounded-full w-24"
-          src={home.imagen}
-          alt={home.nombre}
-        />
-      </div>
-    </section>
+    </>
   );
 }
 
