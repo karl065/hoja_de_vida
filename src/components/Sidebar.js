@@ -37,6 +37,7 @@ const Sidebar = () => {
           className="hover:scale-110 hover:cursor-pointer hover:text-black"
           href={footer.linkedin}
           target="_blank"
+          rel="noreferrer"
         >
           linkedin
         </a>
@@ -44,6 +45,7 @@ const Sidebar = () => {
           className="hover:scale-110 hover:cursor-pointer hover:text-black"
           href={footer.gitHub}
           target="_blank"
+          rel="noreferrer"
         >
           gitHub
         </a>
