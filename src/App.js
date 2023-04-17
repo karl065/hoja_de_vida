@@ -3,7 +3,6 @@ import './App.css';
 
 import Home from './components/Home';
 import Portafolio from './components/Portafolio/Portafolio';
-import Header from './components/Header';
 import CurriculumSectionsEducation from './components/CurriculumSections/CurriculumSectionsEducation';
 import CurriculumSectionsExperiencia from './components/CurriculumSections/CurriculumSectionsExperiencia';
 
