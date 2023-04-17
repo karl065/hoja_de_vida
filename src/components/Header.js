@@ -5,7 +5,7 @@ const Header = () => {
   const {home, footer} = DB;
   return (
     <header className="px-4 py-5 bg-gradient-to-t from-white via-neutral-400 to-neutral-400">
-      <div className="animate-pulse md:flex md:justify-between items-stretch font-bold">
+      <div className="md:flex md:justify-between items-stretch font-bold">
         <div className="uppercase flex flex-col">
           <h1 className="hover:scale-110 bg-gradient-to-br from-indigo-900 to-black text-transparent bg-clip-text leading-normal text-4xl text-left mb-5 md:mb-0">
             {home.nombre}

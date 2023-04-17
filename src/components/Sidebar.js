@@ -6,7 +6,7 @@ const Sidebar = () => {
   const {footer} = DB;
   return (
     <aside className="lg:w-50 px-4 py-5 bg-gradient-to-b from-white via-neutral-400 to-black">
-      <div className="animate-pulse  flex flex-col">
+      <div className="flex flex-col">
         <Link
           className="hover:scale-110 text-center bg-blue-900 mb-5 w-auto py-3 text-white uppercase font-bold rounded hover:cursor-pointer hover:bg-zinc-800 hover:text-black transition-colors"
           to={`/`}
