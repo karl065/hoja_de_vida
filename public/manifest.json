@@ -1,6 +1,6 @@
 {
-  "short_name": "Carlos Castellanos",
-  "name": "Carlos Javier Castellanos Macias",
+  "short_name": "React App",
+  "name": "Create React App Sample",
   "icons": [
     {
       "src": "favicon.ico",
