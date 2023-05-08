@@ -8,7 +8,7 @@ export const DB = {
     perfil:
       'Me considero una persona, responsable, cumplidora de los deberes encargados, me gusta trabajar en equipo,' +
       ' siempre me encuentro en un aprendizaje constante, ya que mi profesion asi lo requiere, mis conocimientos en desarrollo son: ' +
-      '\n•Java \n•JavaScrip \n•HTML \n•CSS \n•Python \n•MongoDB \n•FireBase \n•Kotlin.' +
+      '\n•Java \n•JavaScript \n•HTML \n•CSS \n•Python \n•MongoDB \n•FireBase \n•Kotlin.' +
       '\nMi sueño es poder ingresar a una compañia en la cual me permita crecer en este mundo de la programacion y el desarrollo tecnologico.',
   },
   curriculumSections: {
